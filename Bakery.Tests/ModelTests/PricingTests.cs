@@ -20,7 +20,7 @@ namespace Pricing.Tests
       int breadQty = 4;
       int pastryQty = 5;
       Gluten newGluten = new Gluten(breadQty, pastryQty);
-      string result = newGluten.BreadQty;
+      int result = newGluten.BreadQty;
       Assert.AreEqual(breadQty, result);
     }
   }
