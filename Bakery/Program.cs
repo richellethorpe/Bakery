@@ -10,7 +10,7 @@ namespace BakeShop
       Console.WriteLine("Welcome to Gluten for your Glutes Bakeshop. How many loaves of bread would you like to purchase?");
       string bStringQty = Console.ReadLine();
       int bQty = int.Parse(bStringQty);
-      Console.WriteLine("You selected" + bQty + "loaves of bread. How many pastries would you like to purchase?");
+      Console.WriteLine("You selected " + bQty + " loaves of bread. How many pastries would you like to purchase?");
       string pStringQty = Console.ReadLine();
       int pQty = int.Parse(pStringQty);
       Gluten newGluten = new Gluten(bQty, pQty);
