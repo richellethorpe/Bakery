@@ -1,17 +1,16 @@
 using System;
+using System.Collections.Generic;
 
 namespace Pricing.Models
 {
-  public class Gluten
+  public class Bread
   {
     public int BreadQty { get; set; }
-    public int PastryQty { get; set; }
-    public Gluten (int breadQty, int pastryQty)
+    public Bread (int breadQty)
     {
       BreadQty = breadQty;
-      PastryQty = pastryQty;
     }
-  }
+  
 
   public int ReturnBreadPrice(int bQty)
   {
@@ -19,12 +18,23 @@ namespace Pricing.Models
     // (find rounding function)
     return ((bQty - freeBreads) * 5);
     }
-  
 
-  public int ReturnPastryPrice(int pQty)
+  }
+
+
+  public class Pastry
+  {
+    public int PastryQty { get; set; }
+    public Pastry (int pastryQty)
+    {
+      PastryQty = pastryQty;
+    }
+  
+      public int ReturnPastryPrice(int pQty)
     {
       int freePastries= pQty /3;
       return ((pQty - freePastries) * 2);
     }
+  }
 }
 

@@ -13,11 +13,11 @@ namespace BakeShop
       Console.WriteLine("You selected " + bQty + " loaves of bread. How many pastries would you like to purchase?");
       string pStringQty = Console.ReadLine();
       int pQty = int.Parse(pStringQty);
-      Gluten newGluten = new Gluten(bQty, pQty);
-      //follow up on how to call functions below
-      int total = ReturnBreadPrice(int bQty) + ReturnPastryPrice(int pQty)
+      Bread newBread = new Bread(bQty);
+      Pastry newPastry = new Pastry(pQty);
+      int total = newBread.ReturnBreadPrice(bQty)  + newPastry.ReturnPastryPrice(pQty);
       string stringTotal = total.ToString();
-      Console.WriteLine("Thank you for your order. You have have selected" + bQty + "loaves of bread and " + pQty + "pastries. Your total comes to $" + stringTotal);
+      Console.WriteLine("Thank you for your order. You have have selected " + bQty + " loaves of bread and " + pQty + " pastries. Your total comes to $" + stringTotal + ".");
 
     }
   }

@@ -8,20 +8,59 @@ namespace Pricing.Tests
   public class PricingTests
   {
     [TestMethod]
-    public void GlutenConstructor_CreateInstance_Gluten()
+    public void BreadConstructor_CreateInstance_Bread()
     {
-      Gluten newGluten = new Gluten(6, 7);
-      Assert.AreEqual(typeof(Gluten),newGluten.GetType());
+      Bread newBread = new Bread(5);
+      Assert.AreEqual(typeof(Bread),newBread.GetType());
+    }
+
+     [TestMethod]
+    public void PastryConstructor_CreateInstance_Pastry()
+    {
+      Pastry newPastry = new Pastry(5);
+      Assert.AreEqual(typeof(Pastry),newPastry.GetType());
+    }
+  
+
+    [TestMethod]
+    public void BreadContstructor_ReturnBreadQty_Int()
+    {
+      int breadQty = 4;
+      Bread newBread = new Bread(breadQty);
+      int result = newBread.BreadQty;
+      Assert.AreEqual(breadQty, result);
     }
 
     [TestMethod]
-    public void GetBreadQty_ReturnBreadQty_Int()
+    public void PastryContstructor_ReturnPastryQty_Int()
     {
-      int breadQty = 4;
-      int pastryQty = 5;
-      Gluten newGluten = new Gluten(breadQty, pastryQty);
-      int result = newGluten.BreadQty;
-      Assert.AreEqual(breadQty, result);
+      int pastryQty = 4;
+      Pastry newPastry = new Pastry(pastryQty);
+      int result = newPastry.PastryQty;
+      Assert.AreEqual(pastryQty, result);
+    }
+
+    [TestMethod]
+    public void ReturnPastryPrice_ReturnPastryPrice_Int()  
+    {
+      int pastryQty = 8;
+      Pastry newPastry = new Pastry(pastryQty);
+      int pastryPrice = newPastry.ReturnPastryPrice(pastryQty);
+      Assert.AreEqual(pastryPrice, 12);
+
+    }
+
+    [TestMethod]
+    public void ReturnBreadPrice_ReturnBreadPrice_Int()  
+    {
+      int breadQty = 7;
+      Bread newBread = new Bread(breadQty);
+      int breadPrice = newBread.ReturnBreadPrice(breadQty);
+      Assert.AreEqual(breadPrice, 25);
+
     }
   }
 }
+
+
+

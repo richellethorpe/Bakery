@@ -98,3 +98,6 @@
 /Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/obj/Debug/net6.0/Bakery.Tests.pdb
 /Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/obj/Debug/net6.0/Bakery.Tests.genruntimeconfig.cache
 /Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/obj/Debug/net6.0/ref/Bakery.Tests.dll
+/Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/bin/Debug/net6.0/Bakery.deps.json
+/Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/bin/Debug/net6.0/Bakery.runtimeconfig.json
+/Users/richellethorpe/Desktop/Bakery/Bakery.Solution/Bakery.Tests/bin/Debug/net6.0/Bakery
