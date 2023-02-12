@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Pricing.Models
 {
   public class Bread
